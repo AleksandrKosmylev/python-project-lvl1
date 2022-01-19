@@ -4,14 +4,14 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
-     - uses: actions/checkout@v2
-     - name: My first step
-     - uses: ./.github/actions/
-     - name: Set up python
-       uses: actions/setup-python@v2
-       with:
+      - uses: actions/checkout@v2
+      - name: Set up python
+        uses: actions/setup-python@v2
+        with:
           python-version: 3.9
-     - name: Install Poetry
-       run: pip install poetry 
-     - name: Use linter
-       run: make lint
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        
+      - name: Use linter
+        run: poetry run flake8 brain_games
