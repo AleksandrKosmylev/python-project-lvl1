@@ -6,15 +6,12 @@ jobs:
     steps:
      - uses: actions/checkout@v2
      - name: My first step
-       uses: ./.github/actions/
-    
-      - name: Set up python
-        uses: actions/setup-python@v2
-        with:
+     - uses: ./.github/actions/
+     - name: Set up python
+       uses: actions/setup-python@v2
+       with:
           python-version: 3.9
-
-      - name: Install Poetry
-        run: pip install poetry 
-        
-      - name: Use linter
-        run: make lint
+     - name: Install Poetry
+       run: pip install poetry 
+     - name: Use linter
+       run: make lint
