@@ -4,12 +4,14 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@master
+        name: Checkout
+    
       - name: Set up python
         uses: actions/setup-python@v2
         with:
           python-version: 3.9
-      - uses: actions/checkout@master
-        name: Checkout
+
       - name: Install Poetry
         run: pip install poetry 
         
