@@ -1,10 +1,10 @@
 #!/usr/bin/env python
-from brain_games import defs
+from brain_games.games.logic import game
+from brain_games.games.game_even import rules, task, answer
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    defs.game()
+    game(rules, task, answer)
 
 
 if __name__ == '__main__':
