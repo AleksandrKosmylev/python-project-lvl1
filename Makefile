@@ -16,6 +16,9 @@ brain-games:
 brain-even:
 	poetry run brain-even
 
+brain-gcd:
+	poetry run brain-gcd
+
 lint:
 	poetry run flake8 brain_games
 

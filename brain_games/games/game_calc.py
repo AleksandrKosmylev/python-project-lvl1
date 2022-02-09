@@ -1,9 +1,7 @@
 import random
-"""yes = even, no = odd"""
 
 
 rules = 'What is the result of the expression?'
-list_of_expressions = []
 num1 = [random.randint(0, 10) for i in range(3)]
 num2 = [random.randint(0, 10) for i in range(3)]
 rand_signs = [random.choice(['*', '+']) for i in range(3)]
