@@ -4,6 +4,7 @@ import prompt
 def game(rules, task, answer):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
+    print(f"Hello, {name}!")
     print(rules)
     counter = 0
     while counter < 3:
@@ -17,5 +18,5 @@ def game(rules, task, answer):
     if counter == 3:
         print(f"Congratulations, {name}")
     else:
-        print(f"{user_answer} is wrong(. Correct answer was {answer[counter]}.")
-        print(f"Let's try again,{name}")
+        print(f"'{user_answer}' is wrong ;(. Correct answer was '{answer[counter]}'.")
+        print(f"Let's try again, {name}!")
