@@ -7,11 +7,11 @@ position = [random.randint(0, 10) for k in range(3)]
 task_list = []
 task = []
 answer = []
-for l in range(3):
-    number_in_prog = start[l]
+for d in range(3):
+    number_in_prog = start[d]
     progression = [number_in_prog]
     for o in range(9):
-        number_in_prog = number_in_prog + step[l]
+        number_in_prog = number_in_prog + step[d]
         progression.append(number_in_prog)
     task_list.append(progression)
 for z in range(3):
@@ -20,5 +20,5 @@ for z in range(3):
     answer.append(str(task_list[z][number]))
     task_list[z][number] = '..'
     for c in task_list[z]:
-        str_of_numbers  = str_of_numbers + " " + str(c)
-    task.append(str_of_numbers )
+        str_of_numbers = str_of_numbers + " " + str(c)
+    task.append(str_of_numbers)

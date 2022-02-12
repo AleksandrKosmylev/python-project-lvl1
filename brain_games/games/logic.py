@@ -18,5 +18,6 @@ def game(rules, task, answer):
     if counter == 3:
         print(f"Congratulations, {name}")
     else:
-        print(f"'{user_answer}' is wrong ;(. Correct answer was '{answer[counter]}'.")
+        print(f"'{user_answer}' is wrong ;(.", end=" ")
+        print(f"Correct answer was '{answer[counter]}'.")
         print(f"Let's try again, {name}!")
