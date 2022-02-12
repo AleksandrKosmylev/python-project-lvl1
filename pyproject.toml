@@ -1,12 +1,16 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "Python package brain-games "
+authors = ["Alex Kos <alex.kosmylev@gmail.com>"]
 packages = [
   { include = "brain_games" }
 ]
-
+repository = "https://github.com/AleksandrKosmylev/python-project-lvl1"
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
 [tool.poetry.dependencies]
 python = "^3.9"
 prompt = "^0.4.1"
