@@ -5,6 +5,7 @@ Python module includes welcome module - "brain-games" and 5 games:
 - brain-calc
 - brain-gcd
 - brain-progression
+- brain-prime
 
 ### Requirements
 
@@ -13,8 +14,8 @@ Python module includes welcome module - "brain-games" and 5 games:
 
 ### Installation and usage
 - clone repository to directory on your computer
-- enter "make full" to install module from the directory
-- to play enter name of the game
+- enter "make full" to install
+- to play enter the name of the game
 
 
 
@@ -26,7 +27,7 @@ This project was built using these tools:
 | Tool                                                                        | Description                                             |
 |-----------------------------------------------------------------------------|---------------------------------------------------------|
 | [poetry](https://poetry.eustace.io/)                                        | "Python dependency management and packaging made easy"  |
-| [flake8](https://flake8.pycqa.org/en/latest/)                               | "python linter"                                         |
+| [flake8](https://flake8.pycqa.org/en/latest/)                               | "Python linter"                                         |
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/AleksandrKosmylev/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/AleksandrKosmylev/python-project-lvl1/actions)
