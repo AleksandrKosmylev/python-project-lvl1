@@ -16,7 +16,7 @@ def game(rules, task, answer):
         else:
             break
     if counter == 3:
-        print(f"Congratulations, {name}")
+        print(f"Congratulations, {name}!")
     else:
         print(f"'{user_answer}' is wrong ;(.", end=" ")
         print(f"Correct answer was '{answer[counter]}'.")
