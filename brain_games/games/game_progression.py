@@ -21,4 +21,4 @@ for z in range(3):
     task_list[z][number] = '..'
     for c in task_list[z]:
         str_of_numbers = str_of_numbers + " " + str(c)
-    task.append(str_of_numbers)
+    task.append(str_of_numbers[1:])
