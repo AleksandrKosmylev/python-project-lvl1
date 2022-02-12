@@ -2,8 +2,8 @@ import random
 
 
 rules = 'Find the greatest common divisor of given numbers.'
-num1 = [random.randint(0, 100) for i in range(3)]
-num2 = [random.randint(0, 100) for c in range(3)]
+num1 = [random.randint(1, 100) for i in range(3)]
+num2 = [random.randint(1, 100) for c in range(3)]
 task = []
 answer = []
 deviders = []
