@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 from brain_games.games.logic import game
-from brain_games.games.game_prime import rules, task, answer
+from brain_games.games.game_prime import prime
 
 
 def main():
-    game(rules, task, answer)
+    game(prime)
 
 
 if __name__ == '__main__':
