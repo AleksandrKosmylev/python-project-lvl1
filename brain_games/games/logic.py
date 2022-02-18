@@ -2,13 +2,15 @@ import prompt
 
 
 def game(get_values):
+    num_rounds = 3
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
     rules, task, answer = get_values()
     print(rules)
     counter = 0
-    while counter < 3:
+    number_of_rounds = num_rounds
+    while counter < number_of_rounds:
         rules, task, answer = get_values()
         print(f"Question: {task}")
         user_answer = input("Your answer: ")
@@ -17,7 +19,7 @@ def game(get_values):
             print("Correct!")
         else:
             break
-    if counter == 3:
+    if counter == num_rounds:
         print(f"Congratulations, {name}!")
     else:
         print(f"'{user_answer}' is wrong ;(.", end=" ")

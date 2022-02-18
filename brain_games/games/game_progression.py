@@ -3,12 +3,15 @@ import random
 
 def progression():
     rules = 'What number is missing in the progression?'
-    step = random.randint(1, 10)
-    start = random.randint(0, 100)
-    position = random.randint(0, 9)
+    max_progression_step = 10
+    max_first_num = 100
+    last_position = 9
+    step = random.randint(1, max_progression_step)
+    start = random.randint(0, max_first_num)
+    position = random.randint(0, last_position)
     number_in_prog = start
     progression = [number_in_prog]
-    for o in range(9):
+    for o in range(last_position):
         number_in_prog = number_in_prog + step
         progression.append(number_in_prog)
     str_of_numbers = ''

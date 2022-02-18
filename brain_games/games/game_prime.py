@@ -1,7 +1,7 @@
 import random
 
 
-def boolean_prime(value):
+def is_prime(value):
     if value == 1 or value == 2:
         return True
     else:
@@ -16,7 +16,7 @@ def boolean_prime(value):
 def prime():
     rules = 'Answer "yes" if given number is prime. Otherwise answer "no"'
     task = random.randint(1, 100)
-    if boolean_prime(task):
+    if is_prime(task):
         answer = "yes"
     else:
         answer = "no"
