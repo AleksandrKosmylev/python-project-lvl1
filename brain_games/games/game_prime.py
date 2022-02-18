@@ -14,8 +14,9 @@ def is_prime(value):
 
 
 def prime():
+    max_num_task = 100
     rules = 'Answer "yes" if given number is prime. Otherwise answer "no"'
-    task = random.randint(1, 100)
+    task = random.randint(1, max_num_task)
     if is_prime(task):
         answer = "yes"
     else:
