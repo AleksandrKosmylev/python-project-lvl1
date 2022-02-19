@@ -1,8 +1,11 @@
 import random
 
 
-def progression():
-    rules = 'What number is missing in the progression?'
+def get_progression_rules():
+    return 'What number is missing in the progression?'
+
+
+def get_progression_round():
     max_progression_step = 10
     max_first_num = 100
     last_position = 9
@@ -20,4 +23,4 @@ def progression():
     for c in progression:
         str_of_numbers = str_of_numbers + " " + str(c)
     task = str_of_numbers[1:]
-    return rules, task, answer
+    return task, answer
