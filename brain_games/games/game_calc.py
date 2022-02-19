@@ -1,11 +1,11 @@
 import random
 
 
-def calc_rules():
+def get_calc_rules():
     return 'What is the result of the expression?'
 
 
-def calc_game():
+def get_calc_round():
     max_value_for_num = 10
     num1 = random.randint(0, max_value_for_num)
     num2 = random.randint(0, max_value_for_num)

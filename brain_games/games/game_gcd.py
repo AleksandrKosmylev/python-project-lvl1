@@ -1,11 +1,11 @@
 import random
 
 
-def gcd_rules():
+def get_gcd_rules():
     return 'Find the greatest common divisor of given numbers.'
 
 
-def gcd_game():
+def get_gcd_round():
     max_value = 100
     num1 = random.randint(1, max_value)
     num2 = random.randint(1, max_value)
