@@ -1,6 +1,10 @@
 import random
 
 
+def get_prime_rules():
+    return 'Answer "yes" if given number is prime. Otherwise answer "no"'
+
+
 def is_prime(value):
     if value == 1 or value == 2:
         return True
@@ -8,17 +12,15 @@ def is_prime(value):
         for j in range(2, value + 1):
             if value % j == 0 and value != j:
                 return False
-                break
             elif value == j:
                 return True
 
 
-def prime():
+def get_prime_round():
     max_num_task = 100
-    rules = 'Answer "yes" if given number is prime. Otherwise answer "no"'
     task = random.randint(1, max_num_task)
     if is_prime(task):
         answer = "yes"
     else:
         answer = "no"
-    return rules, task, answer
+    return task, answer
