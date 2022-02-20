@@ -1,7 +1,7 @@
 install:
 	poetry install
 
-build:
+build: check
 	poetry build
 
 publish:
@@ -27,3 +27,6 @@ full:
 	poetry build
 	poetry publish --dry-run
 	python3 -m pip install --user dist/*.whl --force-reinstall
+	
+selfcheck:
+	poetry check
