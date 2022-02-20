@@ -1,4 +1,5 @@
 import random
+max_value = 100
 
 
 def get_gcd_rules():
@@ -6,7 +7,6 @@ def get_gcd_rules():
 
 
 def get_gcd_round():
-    max_value = 100
     num1 = random.randint(1, max_value)
     num2 = random.randint(1, max_value)
     task = str(num1) + ' ' + str(num2)
