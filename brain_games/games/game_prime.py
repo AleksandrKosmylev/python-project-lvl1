@@ -13,8 +13,7 @@ def is_prime(value):
         for j in range(2, value + 1):
             if value % j == 0 and value != j:
                 return False
-            else:
-                return True
+        return True
 
 
 def get_prime_round():
