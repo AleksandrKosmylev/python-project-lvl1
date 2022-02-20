@@ -1,6 +1,4 @@
 import random
-
-
 max_num_task = 100
 
 
