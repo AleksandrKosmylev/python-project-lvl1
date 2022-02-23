@@ -5,7 +5,7 @@ max_first_num = 100
 length_of_progression = 9
 
 
-def get_progression_rules():
+def get_progression_rule():
     return 'What number is missing in the progression?'
 
 
@@ -28,4 +28,4 @@ def get_progression_round():
 
 
 def run_game_progression():
-    run_game(get_progression_rules, get_progression_round)
+    run_game(get_progression_rule, get_progression_round)

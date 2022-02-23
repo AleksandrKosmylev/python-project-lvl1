@@ -2,12 +2,12 @@ import prompt
 number_of_rounds = 3
 
 
-def run_game(get_rules, get_game_round):
+def run_game(get_rule, get_game_round):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
-    rules = get_rules()
-    print(rules)
+    rule = get_rule()
+    print(rule)
     counter = 0
     while counter < number_of_rounds:
         task, answer = get_game_round()

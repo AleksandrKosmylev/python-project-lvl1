@@ -2,7 +2,7 @@ import random
 max_value_for_num = 10
 
 
-def get_calc_rules():
+def get_calc_rule():
     return 'What is the result of the expression?'
 
 

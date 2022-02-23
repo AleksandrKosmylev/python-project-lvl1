@@ -3,7 +3,7 @@ import random
 max_value = 1000000
 
 
-def get_even_rules():
+def get_even_rule():
     return 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
