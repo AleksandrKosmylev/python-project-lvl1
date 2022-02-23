@@ -4,7 +4,7 @@ from brain_games.logic import run_game
 max_value = 1000000
 
 
-def get_even_describtion():
+def get_even_description():
     return 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
@@ -18,4 +18,4 @@ def get_even_round():
 
 
 def run_game_even():
-    run_game(get_even_describtion, get_even_round)
+    run_game(get_even_description, get_even_round)
