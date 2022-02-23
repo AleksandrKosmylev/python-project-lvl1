@@ -1,4 +1,5 @@
 import random
+from brain_games.logic import run_game
 max_num_task = 100
 
 
@@ -23,3 +24,7 @@ def get_prime_round():
     else:
         answer = "no"
     return task, answer
+
+
+def run_game_prime():
+    run_game(get_prime_task, get_prime_round)
