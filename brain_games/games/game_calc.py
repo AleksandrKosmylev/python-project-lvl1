@@ -1,8 +1,9 @@
 import random
+from brain_games.logic import run_game
 max_value_for_num = 10
 
 
-def get_calc_task():
+def get_calc_description():
     return 'What is the result of the expression?'
 
 
@@ -18,3 +19,7 @@ def get_calc_round():
     else:
         answer = str(num1 - num2)
     return task, answer
+
+
+def run_game_calc():
+    run_game(get_calc_description, get_calc_round)

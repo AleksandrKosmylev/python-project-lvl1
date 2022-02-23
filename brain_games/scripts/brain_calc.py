@@ -1,10 +1,9 @@
 #!/usr/bin/env python
-from brain_games.games.logic import game
-from brain_games.games.game_calc import get_calc_rules, get_calc_round
+from brain_games.games.game_gcd import run_game_calc
 
 
 def main():
-    game(get_calc_rules, get_calc_round)
+    run_game_calc()
 
 
 if __name__ == '__main__':
