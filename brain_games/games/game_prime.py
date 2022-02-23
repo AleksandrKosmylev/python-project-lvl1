@@ -2,7 +2,7 @@ import random
 max_num_task = 100
 
 
-def get_prime_rule():
+def get_prime_task():
     return 'Answer "yes" if given number is prime. Otherwise answer "no"'
 
 
