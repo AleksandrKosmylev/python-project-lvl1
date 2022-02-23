@@ -1,5 +1,5 @@
 import random
-from brain_games.games.logic import game
+from brain_games.logic import game
 max_value = 100
 
 
