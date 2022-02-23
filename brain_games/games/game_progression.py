@@ -1,7 +1,8 @@
 import random
+from brain_games.logic import game
 max_progression_step = 10
 max_first_num = 100
-last_position = 9
+length_of_progression = 9
 
 
 def get_progression_rules():
@@ -11,10 +12,10 @@ def get_progression_rules():
 def get_progression_round():
     step = random.randint(1, max_progression_step)
     start = random.randint(0, max_first_num)
-    position = random.randint(0, last_position)
+    position = random.randint(0, length_of_progression)
     number_in_prog = start
     progression = [number_in_prog]
-    for _ in range(last_position):
+    for _ in range(length_of_progression):
         number_in_prog = number_in_prog + step
         progression.append(number_in_prog)
     str_of_numbers = ''
@@ -24,3 +25,7 @@ def get_progression_round():
         str_of_numbers = str_of_numbers + " " + str(c)
     task = str_of_numbers[1:]
     return task, answer
+
+
+def run_game_progression():
+    game(get_progression_rules, get_progression_round)

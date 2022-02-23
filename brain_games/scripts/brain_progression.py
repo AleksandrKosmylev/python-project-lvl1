@@ -1,11 +1,9 @@
 #!/usr/bin/env python
-from brain_games.games.logic import game
-from brain_games.games.game_progression import get_progression_rules
-from brain_games.games.game_progression import get_progression_round
+from brain_games.games.game_progression import run_game_progression
 
 
 def main():
-    game(get_progression_rules, get_progression_round)
+    run_game_progression()
 
 
 if __name__ == '__main__':
