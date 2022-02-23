@@ -1,5 +1,5 @@
 import random
-from brain_games.logic import game
+from brain_games.logic import run_game
 max_progression_step = 10
 max_first_num = 100
 length_of_progression = 9
@@ -28,4 +28,4 @@ def get_progression_round():
 
 
 def run_game_progression():
-    game(get_progression_rules, get_progression_round)
+    run_game(get_progression_rules, get_progression_round)
