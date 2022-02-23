@@ -1,4 +1,5 @@
 import random
+from brain_games.logic import run_game
 """yes = even, no = odd"""
 max_value = 1000000
 
@@ -14,3 +15,7 @@ def get_even_round():
     else:
         answer = "no"
     return task, answer
+
+
+def run_game_even():
+    run_game(get_even_task, get_even_round)
