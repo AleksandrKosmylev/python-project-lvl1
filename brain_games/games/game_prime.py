@@ -3,7 +3,7 @@ from brain_games.logic import run_game
 max_num_task = 100
 
 
-def get_prime_task():
+def get_prime_description():
     return 'Answer "yes" if given number is prime. Otherwise answer "no"'
 
 
@@ -27,4 +27,4 @@ def get_prime_round():
 
 
 def run_game_prime():
-    run_game(get_prime_task, get_prime_round)
+    run_game(get_prime_description, get_prime_round)

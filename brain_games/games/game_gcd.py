@@ -3,7 +3,7 @@ from brain_games.logic import run_game
 max_value = 100
 
 
-def get_gcd_task():
+def get_gcd_description():
     return 'Find the greatest common divisor of given numbers.'
 
 
@@ -23,4 +23,4 @@ def get_gcd_round():
 
 
 def run_game_gcd():
-    run_game(get_gcd_task, get_gcd_round)
+    run_game(get_gcd_description, get_gcd_round)
