@@ -1,5 +1,5 @@
 import random
-from brain_games.logic import game
+from brain_games.logic import run_game
 max_value = 100
 
 
@@ -23,4 +23,4 @@ def get_gcd_round():
 
 
 def run_game_gcd():
-    game(get_gcd_rules, get_gcd_round)
+    run_game(get_gcd_rules, get_gcd_round)
