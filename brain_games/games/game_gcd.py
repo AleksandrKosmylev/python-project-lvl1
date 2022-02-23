@@ -24,4 +24,3 @@ def get_gcd_round():
 
 def run_game_gcd():
     game(get_gcd_rules, get_gcd_round)
-
