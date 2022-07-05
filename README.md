@@ -10,7 +10,7 @@ Python module includes welcome module - "brain-games" and 5 games:
 ### Requirements
 
 - python3 version  3.9.x
-- poetry versiob >= 1.0.0
+- poetry version >= 1.0.0
 
 ### Installation and usage
 - clone repository to directory on your computer
